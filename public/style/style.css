@@ -1,0 +1,295 @@
+*{
+padding:0px;
+margin:0px;
+}
+@font-face{
+font-family: 'indie';
+src:url(../fonts/IndieFlower.ttf);
+}
+@font-face{
+font-family: 'barrio';
+src:url(../fonts/barrio.otf);
+}
+@font-face{
+font-family: 'lato';
+src:url(https://fonts.googleapis.com/css?family=Lato);
+}
+@font-face{
+font-family: 'sistemadyms';
+src:url(../fonts/sistemadyms.ttf);
+}
+@font-face{
+font-family: 'Raleway';
+src:url(../fonts/Raleway/Raleway-BlackItalic.ttf);
+}
+@font-face{
+font-family: 'RalewayDetalles';
+src:url(../fonts/Raleway/Raleway-ExtraLight.ttf);
+}
+@font-face{
+font-family: 'tituloweb';
+src:url(../fonts/Capture.ttf);
+}
+body{background-color: #fff;}
+body img{width: 100%;}
+/*Fuentes para la Pagina*/
+.titles-web{
+font-family: lato;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px;
+color:#282828;
+}
+.text-second{
+font-family: Raleway;
+font-size: 35px;
+font-weight: bold;
+}
+.text-titleMenu{
+font-family: Raleway;
+font-size: 65px;
+}
+.font-detalles{
+font-family: lato;
+line-height: 20px;
+font-style: normal;
+font-size: 14px;
+text-align: justify;
+color: #313b3d;
+font-weight: normal;
+}
+.Barra-titulo{
+ border-top: 2px solid #fff;
+ width: 250px;
+ margin: auto; 		
+}
+/*Fin de fuentes para la pagina*/
+
+/*Imagen de Fondo del baner*/
+/*background:{ #ccc url(../images/one-brick.jpg) no-repeat center center fixed;
+color: #000;
+font-family: 'Open Sans', sans-serif;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+text-align: center;
+}*/
+#img-fondo{
+/*background: url("../img/g-banner.jpg") no-repeat center center fixed;*/
+background-color: #fff;
+background-size: 100%;
+height: 680px;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin-top: 60px;
+}
+/*Fin de Imagen de fondo del banner*/	
+/*Codigo para realizar un menud desplegable*/
+
+.menu {
+height: 70px;
+padding: 10px;
+background-color:white;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-ms-transition: all .5s ease;
+-o-transition: all .5s ease;
+transition: all .5s ease;
+}
+.menu > ul{
+	background-color: white;
+}	
+.menu a{
+color: white;	
+width: 141px;	
+font-size: 35px;
+font-family: indie;
+font-weight: bold;
+}
+.menu ul > li{
+margin-top: -10px;		
+height: 70px;
+padding: 10px;	
+}
+.menu ul > li:hover{
+-webkit-transition-duration:0.9s;
+}
+
+/*Menu cmabiante mediante Jquery*/
+.headermenu {
+background-color: #FF5D4C;
+/*background-color: rgba(0,0,0,0.0);*/
+}
+.headermenu ul {
+
+	background-color: #FFF;
+}
+
+/*Fin del menu cambiante*/
+/*Socual Bar*/
+.social-bar{
+position: fixed;
+left: 0;
+z-index: 5000;
+}
+#menu-bar{
+margin-top: 200px;
+-webkit-transition-duration:0.3s;
+}
+#menu-bar ul{
+list-style: none;
+}
+#menu-bar ul >li >a{
+font-size: 25px;
+display: inline-block;
+color: #fff;
+background-color: #000;
+padding: 15px 25px;
+text-decoration: none; 
+-webkit-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+#menu-bar> ul> li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+#menu-bar> ul> li .icon-twitter {background: #00abf0;}
+#menu-bar> ul> li .icon-instagram {background: #d95232;}
+
+#menu-bar> ul> li >a:hover{
+padding: 15px 40px;
+}
+/*Fin Social Bar*/
+/*Inicio del wrapper con titulo y subtitulos de la pagina*/
+.encabezado-wrapper{
+font-family: barrio;	
+color:#000;
+font-weight: bold;
+font-style: italic;
+line-height: 2em;
+text-align:center;
+margin-top: 150px;
+}
+.encabezado-wrapper:first-letter{
+color: red;
+font-size: 80px;
+}
+.logo-empresa{
+background: url("../img/g-banner2.png") no-repeat;
+height: 300px;
+
+}
+.text-center  h2{
+font-size: 72px;
+}
+#titulo_wrapper{
+margin-top: 60px;
+}
+
+.titulo-web{
+margin-left:-15px;
+margin-right: -15px;
+color: #FF5D4C;
+background-color: rgba(252,200,1,0.4);
+margin-top: -150px;
+height: auto;
+width: auto;
+padding: 20px;
+border-top: solid 3px #FCC801;
+text-align: center;
+
+}
+/*Fin de los titulos*/
+/*Inicio de los detalles de la pagina*/
+.nosotros-wrapper {
+background-color: #FFF;
+text-align: center;
+padding-top: 70px;
+padding-bottom: 200px;
+}
+
+
+.nosotros-wrapper hr{
+ color: #000;
+ background-color: #000;
+ width: 250px;
+ margin: auto; 		
+}
+.title-nosotros {
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+/*Inicio de galeria*/
+.gallery-wrapper {
+
+text-align: center;
+padding-top: 50px;
+padding-bottom: 200px;
+}
+.img-gallery{
+	position: relative;
+}
+.img-gallery:before{
+	content: '';
+	position: absolute;
+	top: -8px;
+	bottom: -8px;
+	left: -8px;
+	right: -8px;
+	border: 2px solid red;
+	-webkit-transition-duration:0.6s;
+	opacity: 0;
+}
+.img-gallery:hover:before{
+	top: -6px;
+	bottom: -8px;
+	left: -8px;
+	right: -8px;
+	opacity: 1;
+}
+/*Fin de galeria*/
+
+/*Fin de los detalles de la  pagina**/
+/*Contacto*/
+.contacto-wrapper {
+height: auto;
+color: #fff;
+font-weight: bold;
+text-align: center;
+}
+.title-form{
+padding-bottom: 20px;
+font-size: 30px;
+color:#fff;
+
+}
+.texto-wrapper{
+color:#c3c3c3;
+}
+/* fin Contacto*/
+/*Detalles*/
+.info-wrapper{
+font-size: 18px;
+color: #fff;
+font-weight: normal;
+line-height: normal;
+}
+/*Fin detalles*/
+.img-subcontent{
+height: 800px;
+background-color: #8FB489;
+}
+/*Uso de media queries*/
+@media only screen and (max-width: 340px) and (min-width: 5px) {
+	/*#img-fondo{
+background: url("../img/g-banner3.png") no-repeat center center fixed;
+
+height: 680px;
+
+}*/
+	}
+
+}
