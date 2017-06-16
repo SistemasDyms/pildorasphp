@@ -14,7 +14,7 @@ try {
 	$consult->execute();
 	$logON=$consult->rowCount();
 	if($logON==1){
-		echo "a iniciado sesion correctamente succesfus";
+		echo "a iniciado sesion correctamente";
 	}else{
 		header("location:index.php");
 	}

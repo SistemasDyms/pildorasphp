@@ -1,6 +1,3 @@
-<?php
-require_once("class.php");
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,10 +6,13 @@ require_once("class.php");
 </head>
 <body>
 	<h1>Consultas perparadas con PDO </h1>
-	<?php 
-	
-
-	?>
+	<form class="" action="class.php" method="post">
+		<div class="form-group">
+			<label for="buscar">Ingresa el nombre:</label>
+			<input type="text" name="buscar" id="buscar">
+		</div>
+		<input type="submit" name="boton" value="Buscar!">
+	</form>
 
 </body>
 </html>

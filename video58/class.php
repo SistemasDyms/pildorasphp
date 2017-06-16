@@ -1,34 +1,25 @@
 <?php
-require_once("config.php");
+require_once("../public/class/conexionPDO.php");
+//video58
+$valor=$_GET["buscar"];
+Class Crud extends ConectionPDO{
 
-$con=mysqli_connect($db_host,$db_user,$db_password);
-if(mysqli_connect_errno()){
-	echo "Error al conectar con la BD";
-	exit();
-}
-mysqli_select_db($con,$db_name) or die("Error al conectar con la BD");
-mysqli_set_charset($con,"utf8");
-$consult ="Select * from datosusuario";
-$result=mysqli_query($con,$consult);
-?>
-<table> 
-<tr>
-<?php
-while(($fila=mysqli_fetch_row($result)) ==TRUE){
+  public function Crud(){
+    parent::__construct();
+  }
+  public function get_productos($valor){
+    $sql="select * from productos where NOMBREARTICULO='".$valor."'";
+    $consult=$this->conexion->prepare($sql);
+    $consult->execute(array());
+    $resultado=$consult->fetchAll(PDO::FETCH_ASSOC);
+    $consult->CloseCursor();
+    return $resultado;
+    $this->conexion=NULL;
 
-	echo "<td>".$fila[0]."</td>";
-	echo $fila[1]."<br>";
-	echo $fila[2]."<br>";
-	echo $fila[3]."<br>";
-	echo "*********************************************************/<br>";
+  }
 
 }
 
 
-?>	
-</tr>
-</table>
-<?php
-mysqli_close($con);		
 
 ?>
