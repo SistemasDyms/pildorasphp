@@ -14,7 +14,9 @@ try {
 	$consult->execute();
 	$logON=$consult->rowCount();
 	if($logON==1){
-		echo "a iniciado sesion correctamente succesfus";
+		session_start();
+		$_SESSION["usuario"]=$_POST["user"];
+		header("location:panel.php");
 	}else{
 		header("location:index.php");
 	}

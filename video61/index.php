@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Video 60</title>
+	<title>Video 61</title>
 	<link rel="stylesheet" href="../public/css/bootstrap.min.css">
 </head>
 <body>
-	<h1>explicacion de sesiones parte 2  </h1>
+	<h1>explicacion de sesiones parte 3  </h1>
 	<form  action="login.php" method="post">
 		<div class="form-group">
 			<label for="user">Usuario</label>
