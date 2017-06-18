@@ -20,6 +20,7 @@ if(!isset($nombre)){
   <div class="row">
     <div class="col-md-6">
       <h1>Bienvenido al panel de control: <?php echo  $nombre; ?> </h1>
+      <h3> <a href="panel-img.php">Ir al panel de imagenes</a> </h3>
     </div>
     <div class="col-md-6">
       <h1>Cerrar sesion</h1><a href="cerrar.php">aqui</a>

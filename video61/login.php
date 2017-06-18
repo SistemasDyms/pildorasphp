@@ -1,6 +1,6 @@
 <?php
 require_once("../public/class/conexionPDO.php");
-//video59
+//video61
 try {
 	$conexion = new PDO("mysql:host=localhost;dbname=pildorasphp",DB_USER,DB_PASS);
 	$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
