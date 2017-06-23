@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-					<h1>cookies en php</h1>
+					<h1>cookies en php parte1</h1>
 					<?php
 					setcookie("boca","el mejor equipo del mundo");
 					 ?>
