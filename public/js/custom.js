@@ -1,4 +1,4 @@
-//Scrips de jquery para que el menu cambie cuando se hace el sccroll
+//Scrips de jquery para que el menu cambie cuando se hace el scroll
 $(document).ready(function(){
 	var altura = $('.menu').offset().top;
 	var abajo = $(document).height();
@@ -16,6 +16,7 @@ $(document).ready(function(){
                 
 });*/
 });
+
 
 
 
