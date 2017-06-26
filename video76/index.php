@@ -6,7 +6,7 @@ require_once("../public/class/conect.php");
   <head >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>video 76 Paginacion de datos de usuarios parte 3</title>
+    <title>video 76 Paginacion del crud completo</title>
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css"><!-- LINK de los iconos -->
   </head>
