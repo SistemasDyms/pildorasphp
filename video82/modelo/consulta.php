@@ -14,8 +14,6 @@ Class PersonasModelo{
 	public function GetPersonas(){
 		require_once("paginacion.php");
 		$consulta=$this->db->query("select * from usuarios LIMIT $inicio,$total");
-
-
 		while ($file=$consulta->fetch(PDO::FETCH_ASSOC)) {
 			$this->presonas[]=$file;
 		}
